@@ -1,0 +1,59 @@
+# ============================================================
+# Environment & secrets — NEVER commit these
+# ============================================================
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# ============================================================
+# Editor / IDE settings (machine-specific)
+# ============================================================
+.vscode/
+.idea/
+
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
+
+# ============================================================
+# Conda / virtual environments
+# ============================================================
+env/
+venv/
+*.conda/
+
+# ============================================================
+# Spark / Hadoop generated outputs (large, regenerable)
+# ============================================================
+data/train.parquet/
+data/test.parquet/
+data/bank_clean.parquet/
+data/feature_pipeline_model/
+data/models/
+spark-warehouse/
+metastore_db/
+derby.log
+
+# ============================================================
+# Streaming runtime folders (generated at runtime)
+# ============================================================
+streaming/input/
+streaming/output/
+streaming/output_windowed/
+streaming/checkpoint/
+streaming/checkpoint_windowed/
+
+# ============================================================
+# OS-specific junk
+# ============================================================
+.DS_Store
+Thumbs.db
