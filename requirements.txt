@@ -1,0 +1,29 @@
+# =============================================================================
+# requirements.txt  —  Bank ML Big Data Project
+# =============================================================================
+# Install Python dependencies:
+#   pip install -r requirements.txt
+#
+# Hadoop + Spark must be installed separately (see README.md).
+# =============================================================================
+
+# Core data processing
+pyspark==3.5.0
+pandas==2.1.4
+numpy==1.26.3
+
+# Visualization
+matplotlib==3.8.2
+seaborn==0.13.2
+
+# Utilities
+scikit-learn==1.4.0        # for quick sanity checks / sklearn-parity comparisons
+pyarrow==14.0.2            # Parquet I/O
+fastparquet==2023.10.1     # Alternative Parquet engine
+
+# Jupyter (for notebooks/)
+jupyterlab==4.0.11
+notebook==7.0.7
+
+# Optional: Kafka integration
+# kafka-python==2.0.2      # uncomment if using real Kafka instead of file simulation
